@@ -8,7 +8,7 @@ API para gestionar información de buses. Desarrollada con **Spring Boot** y **P
 
 1. Clonar el repositorio:
 ```bash
-git clone <URL_DEL_REPO>
+git clone https://github.com/Samuelichu/api-buses.git
 ```
 2. Configurar PostgreSQL y crear la base de datos "prueba_buses".
 
