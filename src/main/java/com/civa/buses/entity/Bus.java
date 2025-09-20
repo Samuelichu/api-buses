@@ -3,6 +3,7 @@ package com.civa.buses.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -16,13 +17,14 @@ public class Bus {
     private long id;
     private int numBus;
     private String placa;
+
+    @CreationTimestamp
     private LocalDateTime fechaCreacion;
     private String Caracteristicas;
 
     @ManyToOne
-    @JoinColumn(name = "marca_id", nullable = false) // Clave foránea
+    @JoinColumn(name = "marca_id", nullable = false)
     private Marca marca;
-
     private boolean estado;
 
 }
